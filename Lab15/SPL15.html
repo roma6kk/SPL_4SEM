@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SPL15.css">
+  <title>Форма</title>
+</head>
+<body>
+
+  <div class="form-container">
+    <form id="form">
+      <label for="surname">Фамилия</label>
+      <input type="text" id="surname" name="surname" >
+      <span class="error" id="surnameError"></span>
+  
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" >
+      <span class="error" id="nameError"></span>
+  
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" >
+      <span class="error" id="emailError"></span>
+  
+      <label for="phone">Телефон (0xx)xxx-xx-xx</label>
+      <input type="tel" id="phone" name="phone" placeholder="(0xx)xxx-xx-xx" >
+      <span class="error" id="phoneError"></span>
+  
+      <label for="city">Город</label>
+      <select id="city" name="city">
+        <option value="brest">Брест</option>
+        <option value="minsk">Минск</option>
+        <option value="gomel">Гомель</option>
+        <option value="vitebsk">Витебск</option>
+        <option value="mogilev">Могилев</option>
+      </select>
+  
+      <label>
+        <input type="checkbox" name="bstu" value="yes">
+        Я учусь в БГТУ
+      </label>
+  
+      <label>На каком курсе Вы учитесь?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="course" value="1"> 1</label>
+        <label><input type="radio" name="course" value="2"> 2</label>
+        <label><input type="radio" name="course" value="3"> 3</label>
+        <label><input type="radio" name="course" value="4"> 4</label>
+        <span class="error" id="aboutError"></span>
+      </div>
+  
+      <label for="about">Расскажите о себе</label>
+      <textarea id="about" name="about" rows="4" required></textarea>
+      <span class="error" id="aboutError"></span>
+  
+      <button type="submit">Проверить</button>
+    </form>
+  </div>
+<script src="SPL15.js"></script>
+</body>
+</html>
