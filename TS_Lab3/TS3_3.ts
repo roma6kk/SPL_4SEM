@@ -21,7 +21,7 @@ public get(key: string) : T | null {
     }
 
     if (Date.now() > entry.expiration) {
-      this.cache.delete(key); // Удаляем просроченный элемент
+      this.cache.delete(key);
       return null;
     }
 
