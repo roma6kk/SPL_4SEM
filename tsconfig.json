@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
-    "noEmitOnError": true,
+    "noEmitOnError": false,
     "removeComments": false,
     "sourceMap": true,
     "target": "ES2015"

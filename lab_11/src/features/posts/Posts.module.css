@@ -1,0 +1,21 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .addButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .postsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
